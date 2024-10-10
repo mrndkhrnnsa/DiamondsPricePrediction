@@ -39,14 +39,8 @@ It's important to ensure that the dimensions of the diamond (X, Y, Z) are not ze
 
 ## Processing Steps
 
-![Process](images/steps_process.png)
-
-
-**Flowchart Explanation**
-
-**Business Problem**: This is the initial stage where you define and understand the business problem or objective that your project aims to solve or achieve.
-
-1. **Data Quality**: In this stage, you focus on assessing and ensuring the quality of your data. This includes tasks such as data cleaning, handling missing values, and checking for outliers.
+1. **Business Problem**: This is the initial stage where you define and understand the business problem or objective that your project aims to solve or achieve.
+2. **Data Quality**: In this stage, you focus on assessing and ensuring the quality of your data. This includes tasks such as data cleaning, handling missing values, and checking for outliers.
 3. **Eksploratory Data Analytics**: This stage involves exploratory data analysis (EDA), where you explore the dataset to understand its characteristics, distributions, correlations, and patterns. This helps in gaining insights that can guide further steps in the project.
 4. **Preprocessing steps**: This is a detailed subgraph that includes various preprocessing tasks:
 
@@ -140,7 +134,7 @@ Base model in XGBregressor with R2 score 0.98 and RMSE Score is $540
 
 ## Feature Importance
 
-![feature importances](images/features_important.png)
+![feature importances](images/features_importance.png)
 
 
 1. **Carat is Dominant:** The carat feature (weight of the diamond) is by far the most important factor in the model. This aligns with the common understanding that larger diamonds are generally more expensive.
@@ -157,67 +151,5 @@ Base model in XGBregressor with R2 score 0.98 and RMSE Score is $540
 
 * **Buyers:** Focus on carat weight and carat per volume as the main indicators of a diamond's potential value.
 * **Sellers:** Highlight carat weight and any indications of high density to justify a diamond's price.
-
-
-## Deploy Flask
-
-Deploy in simple web
-
-**Home Page**
-
-![home page](images/home_page.png)
-
-**Prediction Page**
-
-![prediction Page](images/predict_page.png)
-
-
-## Project Folder
-
-```markdown
-├── artifacts               # Directory to store trained models and preprocessed data
-│   ├── base_model.pkl      # Saved trained machine learning model
-│   ├── preprocessor.pkl    # Saved preprocessor object for data transformation
-│   ├── raw.csv             # Raw, unprocessed diamond dataset 
-│   ├── test.csv            # Subset of the dataset used for model testing
-│   ├── train.csv           # Subset of the dataset used for model training
-├── Diamond_Price.egg-info  # Metadata about the project (usually for packaging)
-├── images                 # Directory to store images used in the project
-├── logs                   # Directory to store log files generated during training/execution
-├── notebooks              # Jupyter notebooks for experimentation and analysis
-│   └── eda.ipynb          # Exploratory Data Analysis notebook
-├── src                    # Source code directory
-│   ├── components         # Reusable modules for data ingestion, transformation, etc.
-│   │   ├── __init__.py    # Makes the "components" directory a Python package
-│   │   ├── data_ingestion.py   # Code for loading and splitting the dataset
-│   │   ├── data_transformation.py # Code for preprocessing the data
-│   │   └── model_train.py  # Code for training the machine learning model
-│   ├── pipelines          # Scripts to orchestrate the entire ML workflow
-│   │   ├── __init__.py    # Makes the "pipelines" directory a Python package
-│   │   ├── pipeline_train.py # Script to train and evaluate the model pipeline
-│   │   └── prediction_pipeline.py # Script for making predictions on new data
-│   ├── __init__.py        # Makes the "src" directory a Python package
-│   ├── exception.py       # Custom exception handling code
-│   ├── logger.py         # Logging configuration and utility functions
-│   └── utils.py          # General utility functions used throughout the project
-├── templates              # HTML templates for a potential web interface
-│   ├── form.html   
-│   └── index.html
-├── venv                   # Virtual environment to isolate project dependencies
-├── .gitignore              # Specifies files/directories to be ignored by Git
-├── app.py                 # Main application script (possibly a web server)
-├── README.md               # Project description and instructions
-├── requirements.txt        # List of required Python packages
-└── setup.py                # Setup script for installing the project as a package
-```
-
-## How to use ?
-
-```python
-1. git clone https://github.com/bayuzen19/DiamondPricePrediction.git
-2. pip install -r requirements.txt
-3. python app.py
-4. open browser and write localhost:5000/predict
-```
 
 ## Thank You 👍
