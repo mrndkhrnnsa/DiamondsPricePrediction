@@ -41,7 +41,7 @@ It's important to ensure that the dimensions of the diamond (X, Y, Z) are not ze
 
 1. **Business Problem**: This is the initial stage where you define and understand the business problem or objective that your project aims to solve or achieve.
 2. **Data Quality**: In this stage, you focus on assessing and ensuring the quality of your data. This includes tasks such as data cleaning, handling missing values, and checking for outliers.
-3. **Eksploratory Data Analytics**: This stage involves exploratory data analysis (EDA), where you explore the dataset to understand its characteristics, distributions, correlations, and patterns. This helps in gaining insights that can guide further steps in the project.
+3. **Exploratory Data Analytics**: This stage involves exploratory data analysis (EDA), where you explore the dataset to understand its characteristics, distributions, correlations, and patterns. This helps in gaining insights that can guide further steps in the project.
 4. **Preprocessing steps**: This is a detailed subgraph that includes various preprocessing tasks:
 
    - **renew**: This could refer to refreshing or updating data sources if necessary.
